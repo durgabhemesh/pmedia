@@ -1,0 +1,13 @@
+.header{
+    background-color: #45c4db;
+    height: 65px;
+    
+    
+}
+.title{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+    padding-top: 0.5px;
+}
