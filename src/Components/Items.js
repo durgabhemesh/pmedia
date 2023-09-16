@@ -51,10 +51,11 @@ const Items = () => {
   }, []);
   return (
     <div>
-      
+      <div className="box">
       <input onChange={searchData} type="text"></input>
    
       <button onClick={searchHandler}>SEARCH</button>
+      </div>
       <div className="Container">
         {ddata.map((el) => (
           <>

@@ -35,3 +35,16 @@
 a:hover{
     color: black;
 }
+
+.box{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   margin: auto;
+}
+button{
+    background-color: black;
+    color: #fff;
+    outline: none;
+    border: none;
+}
