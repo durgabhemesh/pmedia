@@ -6,6 +6,7 @@ import logo from '../Images/logo.png'
 
 const Items = () => {
   const [ddata, setDdata] = useState([]);
+  const [ss,setSs]=useState('tcs');
   const fetchdata = async () => {
     const response = await fetch(
       "https://placementsmedia-19608-default-rtdb.asia-southeast1.firebasedatabase.app/date2.json"
@@ -26,11 +27,34 @@ const Items = () => {
     console.log(ddata);
     //    console.log(fetc)
   };
+  
+  const searchData=(e)=>{
+    
+    setSs(e.target.value)
+    console.log(ss)
+    fetchdata()
+   
+
+  }
+  const searchHandler=(e)=>{
+
+   
+    const filterData=ddata.filter((el)=>el.name.includes((ss).toUpperCase()))
+    console.log(filterData)
+    setDdata(filterData)
+
+  }
+
+ 
   useEffect(() => {
     fetchdata();
   }, []);
   return (
     <div>
+      
+      <input onChange={searchData} type="text"></input>
+   
+      <button onClick={searchHandler}>SEARCH</button>
       <div className="Container">
         {ddata.map((el) => (
           <>
