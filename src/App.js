@@ -6,11 +6,18 @@ import Items from "./Components/Items";
 
 function App() {
   const [test,setTest]=useState('hey')
-  const re=()=>{
-    setTest('Worked!!!')
-  }
+  const fetchdata=async ()=>{
+       
+    
+    const response=await fetch('https://placementsmedia-19608-default-rtdb.asia-southeast1.firebasedatabase.app/data.json')
+    
+   const fetc=await response.json()
+   
+   console.log(fetc)
+}
   return (
     <div className="App">
+     
       <Header />
       <Items />
 
