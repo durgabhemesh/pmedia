@@ -27,9 +27,10 @@
     height: 200px;
 
 }
-.container a{
+ a{
     background-color: black;
     color: black;
+    
 }
 a:hover{
     color: black;

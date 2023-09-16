@@ -1,13 +1,14 @@
 .header{
-    background-color: #45c4db;
+    background-color: #fff;
+   
     height: 65px;
     
     
 }
 .title{
-    color: #fff;
+    color: #000;
     justify-content: center;
     align-items: center;
     padding-left: 110px;
-    padding-top: 0.5px;
+    padding-top: 1px;
 }
