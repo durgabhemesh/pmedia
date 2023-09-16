@@ -33,7 +33,7 @@ const Items = () => {
     setSs(e.target.value)
     console.log(ss)
     fetchdata()
-   
+   console.log('hey')
 
   }
   const searchHandler=(e)=>{
