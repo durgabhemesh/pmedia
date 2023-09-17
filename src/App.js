@@ -24,7 +24,7 @@ function App() {
     
       <Routes>
         <Route path="pmedia" element={<Homepage />}></Route>
-      <Route path='/pmedia/admin' element={ <AddData />} />
+      <Route path='/admin' element={ <AddData />} />
       </Routes>
      
 
