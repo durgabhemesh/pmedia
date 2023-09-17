@@ -9,7 +9,7 @@ const Items = () => {
   const [ss,setSs]=useState('tcs');
   const fetchdata = async () => {
     const response = await fetch(
-      "https://placementsmedia-19608-default-rtdb.asia-southeast1.firebasedatabase.app/date2.json"
+      'https://placementsmedia-19608-default-rtdb.asia-southeast1.firebasedatabase.app/date2.json'
     );
 
     const resData = await response.json();

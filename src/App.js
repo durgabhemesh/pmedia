@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Header from "./Components/Header";
 import Items from "./Components/Items";
+import AddData from "./Components/AddData"
+import Homepage from "./Components/Homepage";
+import { Route,Routes } from 'react-router-dom';
 
 
 
@@ -18,8 +21,12 @@ function App() {
   return (
     <div className="App">
      
-      <Header />
-      <Items />
+    
+      <Routes>
+        <Route path="pmedia" element={<Homepage />}></Route>
+      <Route path='/pmedia/admin' element={ <AddData />} />
+      </Routes>
+     
 
      
 
