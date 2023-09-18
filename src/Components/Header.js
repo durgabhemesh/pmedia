@@ -1,14 +1,17 @@
 import React from 'react'
 import './Header.css'
+import img from '../Images/A2.jpg'
 
 const Header = () => {
    
   return (
     <div className='header'>
 <div className='title'>
-    <h4 style={{display: 'inline',color:'black',justifyContent:'center',alignContent:'center',alignItems:'center',margin:'auto'}}> Placement's Media</h4>
-    <p style={{fontSize: '11px'}}>Building Trust and Careers...</p>
+     <img className='Mainlogo' src={img}></img>
+    <h4  className='pm'> Placement's Media</h4>
+    
     </div>
+    {/* <p style={{width: '40%',fontSize: '11px', display: 'flex',justifyContent:'center',alignContent:'center',alignItems:'center',margin:'auto',paddingLeft:'20px'}}>Building Trust and Careers...</p> */}
 
    
         
