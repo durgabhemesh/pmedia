@@ -43,12 +43,14 @@ e.preventDefault()
             Name: name,
             Desc: desc,
             url: url,
-            timestamp: timestamp
+           
         }
         addM(data)
         // props.onAdd(data)
         console.log(data)
-
+setName('')
+setDesc('')
+setUrl('')
     }
    
     
@@ -62,7 +64,7 @@ e.preventDefault()
             <input id='desc' value={desc} onChange={descH} type='text'></input>
             <label htmlFor='url'>URL</label>
             <input id='url' value={url} onChange={urlH} type='text'></input>
-            <input type='text' value={timestamp} onChange={timeH}></input>
+           
 <button>Submit</button>
         </form>
     </div>

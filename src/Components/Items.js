@@ -22,9 +22,10 @@ const Items = () => {
         desc: resData[key].Desc,
         url: resData[key].url,
       });
-      setDdata(loaded_data);
+      
+      setDdata(loaded_data.slice().reverse());
     }
-    console.log(ddata);
+    console.log(ddata.reverse());
     //    console.log(fetc)
   };
   
